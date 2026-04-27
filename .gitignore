@@ -1,13 +1,19 @@
-# Byte-compiled / optimized / DLL files
+# -------------------------------------------------
+# Detectree2 – Mask R-CNN single-tree delineation
+# -------------------------------------------------
+
+# 1. OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# 2. Python / Jupyter
 __pycache__/
 *.py[cod]
-
-# C extensions
+*$py.class
 *.so
-
-# Distribution / packaging
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -19,75 +25,80 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-secrets/
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
+MANIFEST
+.pytest_cache/
+.coverage
 htmlcov/
 .tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+.nox/
+.hypothesis/
+.ipynb_checkpoints
+*.ipynb_checkpoints
 
-# Translations
-*.mo
-*.pot
+# 3. Virtual-env
+detectree_env/
+venv/
+env/
+ENV/
 
-# Django stuff:
-*.log
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# DotEnv configuration
-.env
-
-# Database
-*.db
-*.rdb
-
-# Pycharm
-.idea
-
-# VS Code
+# 4. IDE
 .vscode/
+.idea/
+*.sublime-*
 
-# Spyder
-.spyproject/
+# 5. Data & heavy artefacts (NEVER commit these)
+data/
+odm_projects/
+orthos/
+tiles*/
+predictions/
+*.tif
+*.tiff
+*.las
+*.laz
+*.gpkg
+*.geojson
+*.kml
+*.kmz
+labels/
+crowns/
+ground_truth/
 
-# Jupyter NB Checkpoints
-.ipynb_checkpoints/
+# 6. Trained models & logs (store releases separately)
+*.pth
+*.pkl
+*.joblib
+output/
+runs/
+logs/
+tensorboard/
+wandb/
 
-# exclude data from source control by default
-io/
+# 7. Temporary / debug
+*.tmp
+*.log
+*.aux.xml
+*.ovr
+*.bak
 
-# Mac OS-specific storage files
-.DS_Store
+# 8. Private keys / env files
+.env
+*.key
+*.pem
+config.yaml           # if it contains keys or absolute paths
 
-# vim
-*.swp
-*.swo
-
-# Mypy cache
-.mypy_cache/
-
-# History files
-.history
+# -------------------------------------------------
+# ALLOW these small, useful files
+# -------------------------------------------------
+# !README.md
+# !requirements.txt
+# !environment.yml
+# !scripts/*.py
+# !notebooks/*.ipynb
+# !configs/*.yaml
+# !.github/workflows/*.yml
