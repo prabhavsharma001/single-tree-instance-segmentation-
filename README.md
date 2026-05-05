@@ -2,20 +2,6 @@
 
 **B.Tech Major Project**
 
-**Submitted by:**  
-[Your Name]  
-Roll No: [Your Roll Number]  
-Department of Computer Science and Engineering  
-[Your College Name]  
-[Your University Name]  
-Year: 2023-2024
-
-**Under the Guidance of:**  
-[Supervisor Name]  
-[Supervisor Designation]  
-Department of Computer Science and Engineering  
-[Your College Name]
-
 ---
 
 ## Abstract
@@ -141,6 +127,3 @@ Refer to the tutorials in the `notebooks/` directory for data preparation, train
 └── docs/                    # Documentation
 ```
 
----
-
-Copyright (c) 2024, [Your Name]
