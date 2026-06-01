@@ -1,0 +1,37 @@
+pip3 install pycocotools scikit-image --break-system-packages
+
+Usage:   
+  pip3 install [options] <requirement specifier> [package-index-options] ...
+  pip3 install [options] -r <requirements file> [package-index-options] ...
+  pip3 install [options] [-e] <vcs project url> ...
+  pip3 install [options] [-e] <local project path> ...
+  pip3 install [options] <archive url/path> ...
+
+no such option: --break-system-packages
+
+
+
+python3 -m pip install pycocotools scikit-image
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pycocotools in /home/cdac/.local/lib/python3.10/site-packages (2.0.11)
+Collecting scikit-image
+  Downloading scikit_image-0.25.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.8/14.8 MB 11.1 MB/s eta 0:00:00
+Requirement already satisfied: numpy in /home/cdac/.local/lib/python3.10/site-packages (from pycocotools) (1.26.4)
+Requirement already satisfied: networkx>=3.0 in /home/cdac/.local/lib/python3.10/site-packages (from scikit-image) (3.4.2)
+Collecting imageio!=2.35.0,>=2.33
+  Downloading imageio-2.37.3-py3-none-any.whl (317 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.6/317.6 KB 10.3 MB/s eta 0:00:00
+Collecting lazy-loader>=0.4
+  Downloading lazy_loader-0.5-py3-none-any.whl (8.0 kB)
+Collecting pillow>=10.1
+  Using cached pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+Requirement already satisfied: packaging>=21 in /home/cdac/.local/lib/python3.10/site-packages (from scikit-image) (26.0)
+Collecting tifffile>=2022.8.12
+  Downloading tifffile-2025.5.10-py3-none-any.whl (226 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.5/226.5 KB 10.8 MB/s eta 0:00:00
+Collecting scipy>=1.11.4
+  Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 10.5 MB/s eta 0:00:00
+Installing collected packages: tifffile, scipy, pillow, lazy-loader, imageio, scikit-image
+Successfully installed imageio-2.37.3 lazy-loader-0.5 pillow-12.2.0 scikit-image-0.25.2 scipy-1.15.3 tifffile-2025.5.10
